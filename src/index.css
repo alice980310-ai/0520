@@ -1,1 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+TC:wght@500;700;900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Fredoka", "Noto Sans TC", monospace;
+  --color-shin-red: #ff4d4f;
+  --color-shin-yellow: #ffd53e;
+  --color-shin-blue: #3fa9f5;
+  --color-shin-green: #74c540;
+  --color-shin-cream: #fffdf2;
+}
+
+@layer utilities {
+  .cartoon-border {
+    border: 3.5px solid #0f172a;
+  }
+  .cartoon-border-2 {
+    border: 2px solid #0f172a;
+  }
+  .cartoon-shadow-sm {
+    box-shadow: 3px 3px 0px 0px #0f172a;
+  }
+  .cartoon-shadow {
+    box-shadow: 5px 5px 0px 0px #0f172a;
+  }
+  .cartoon-shadow-lg {
+    box-shadow: 8px 8px 0px 0px #0f172a;
+  }
+}
+
+/* Fun bubbly animations */
+@keyframes shin-shake {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.animate-[shin-shake_0.4s_infinite] {
+  animation: shin-shake 0.4s infinite;
+}
