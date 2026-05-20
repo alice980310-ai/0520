@@ -1,0 +1,6 @@
+{
+  "name": "抽籤隨機選擇器",
+  "description": "一個精美、流暢且功能齊全的隨機抽籤與隨機分組系統，支援名單抽籤、隨機數字、幸運轉盤、隨機分組及語音/音效功能。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
